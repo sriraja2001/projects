@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateSnapActivity">
+
+    <ImageView
+        android:id="@+id/createSnapImageView"
+        android:layout_width="205dp"
+        android:layout_height="225dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="33dp"
+        android:onClick="chooseImageClicked"
+        app:layout_constraintBottom_toTopOf="@+id/chooseImageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/addimage" />
+
+    <Button
+        android:id="@+id/chooseImageButton"
+        android:layout_width="127dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="28dp"
+        android:onClick="chooseImageClicked"
+        android:text="choose image"
+        android:background="@drawable/custom_button_gradient"
+        android:textColor="#4F585C"
+        android:fontFamily="@font/viga"
+        app:layout_constraintBottom_toTopOf="@+id/messageEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/messageEditText"
+        android:layout_width="274dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:fontFamily="@font/viga"
+        android:hint="Message"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/nextButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="121dp"
+        android:onClick="nextClicked"
+        android:text="next"
+        android:background="@drawable/custom_button_gradient"
+        android:textColor="#4F585C"
+        android:fontFamily="@font/viga"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#090000"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="129dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/nameImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ubericon" />
+
+    <ImageView
+        android:id="@+id/nameImageView"
+        android:layout_width="155dp"
+        android:layout_height="86dp"
+        android:layout_marginBottom="38dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/usernameEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ubertext" />
+
+    <Switch
+        android:id="@+id/userTypeSwitch"
+        android:layout_width="146dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="37dp"
+        android:fontFamily="@font/audiowide"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:thumbTint="#F6F5F5"
+        android:trackTint="#10F61A"
+        app:layout_constraintBottom_toTopOf="@+id/goButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.33"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/riderTextView"
+        android:layout_width="84dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="60dp"
+        android:fontFamily="@font/audiowide"
+        android:text="RIDER"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
+
+    <TextView
+        android:id="@+id/riderTextView2"
+        android:layout_width="96dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/audiowide"
+        android:text="DRIVER"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
+
+    <Button
+        android:id="@+id/goButton"
+        android:layout_width="106dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="84dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/audiowide"
+        android:onClick="clickGo"
+        android:text="GO"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="34dp"
+        android:background="#7C7777"
+        android:ems="10"
+        android:fontFamily="@font/audiowide"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textColor="#F8F5F5"
+        app:layout_constraintBottom_toTopOf="@+id/passwordEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="#7C7777"
+        android:ems="10"
+        android:fontFamily="@font/audiowide"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#F8F5F5"
+        app:layout_constraintBottom_toTopOf="@+id/userTypeSwitch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

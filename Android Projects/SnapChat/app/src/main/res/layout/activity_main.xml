@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="143dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/emailEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/snapchat" />
+
+    <Button
+        android:id="@+id/goButton"
+        android:layout_width="101dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="205dp"
+        android:onClick="goClicked"
+        android:text="Go"
+        android:textSize="24sp"
+        android:background="@drawable/custom_button_gradient"
+        android:textColor="#4F585C"
+        android:fontFamily="@font/viga"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="285dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:fontFamily="@font/viga"
+        android:hint="Email Id"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/passwordEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="285dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:fontFamily="@font/viga"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/goButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
