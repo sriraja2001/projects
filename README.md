@@ -19,4 +19,4 @@
 ## 📫 𝙷𝚘𝚠 𝚝𝚘 𝚛𝚎𝚊𝚌𝚑 𝚖𝚎:
 
 [<img src="https://image.flaticon.com/icons/png/512/174/174857.png" height="40em" align="center" alt="Follow Sri on LinkedIn" title="Follow Sri on LinkedIn"/>](https://www.linkedin.com/in/sri-raja-s)
-[<img src="https://image.flaticon.com/icons/png/512/174/174857.png" height="40em" align="center" alt="Email Sri" title="Email Sri"/>](mailto:EMAILADDRESS)
+[<img src="https://image.flaticon.com/icons/png/512/281/281769.png" height="40em" align="center" alt="Email Sri" title="Email Sri"/>](mailto:srirajavignesh.2001@gmail.com)
